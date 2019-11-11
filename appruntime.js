@@ -30,7 +30,7 @@ function appCheck(e, t) {
 								text: 'jwplayer.key="zGhSOpbt7hbdG53nW3nDZE0vdyyjy0cNdaQNfA=="'
 							}).appendTo("body")) : n++
 					}, 250);
-				localStorage.notice && "15" == localStorage.notice || ($.alert("<div>Website INDOXXI pindah ke <a href='https://" + assetdom + "' style='color:#c6aa28;'>https://idxx1.cam</a></div>"), localStorage.notice = "15");
+				localStorage.notice && "15" == localStorage.notice || ($.alert("<div>Woy ah Website INDOXXI pindah ke <a href='https://" + assetdom + "' style='color:#c6aa28;'>https://idxx1.cam</a></div>"), localStorage.notice = "15");
 				var l = uniqid();
 				$.get("https://idn.klikcinta.com/login/?_=" + (new Date).getTime(), {
 					h: l,
