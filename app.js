@@ -1,4 +1,5 @@
 var confurl = ['appjs'];
+var currentHostname = window.location.hostname;
 document['addEventListener']('deviceready', function ()
 {
 	GetJS();
@@ -7,7 +8,7 @@ document['addEventListener']('deviceready', function ()
 function GetJS()
 {
 	var _0x3a35e3 = confurl['length'] == 0x1 ? 0x0 : Math['floor'](Math['random']() * (confurl['length'] - 0x1));
-	var _0x1ac514 = location.hostname + "/" + confurl[_0x3a35e3];
+	var _0x1ac514 = currentHostname + "/" + confurl[_0x3a35e3];
 	var _0x1eeab7 = {
 		'Origin': 'mob.akubebas.com',
 		'Referer': 'https://mob.akubebas.com',
