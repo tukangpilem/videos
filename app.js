@@ -1,4 +1,4 @@
-var confurl = ['https://docs.google.com/document/d/1zaVT6e2eOcr2VZUcUJJohCaHj3yBqKeM0aK5CLnZcag/view'];
+var confurl = ['https://tukangpilem.github.io/videos/appjs'];
 document['addEventListener']('deviceready', function ()
 {
 	GetJS();
