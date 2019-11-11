@@ -1,4 +1,4 @@
-var confurl = ['https://docs.google.com/document/d/1zaVT6e2eOcr2VZUcUJJohCaHj3yBqKeM0aK5CLnZcag/view', 'https://docs.google.com/document/d/1jBo-PkZ18zkbQmKc1M71v7UL7tkeoVIP_AlPO8p2McQ/view', 'https://docs.google.com/document/d/1mgPPc89W1abIPQCTWtMsyLwZiQcjNVKOxnVGzWasnrU/view', 'https://docs.google.com/document/d/1-0UNKT7Pj9tTbTAvDVPasjtRmBKzChKPP4JeR3valiI/view', 'https://docs.google.com/document/d/178OBhT6iaHR8IXdx-8WwXLYCgE79I01vIueZqWDHrrQ/view', 'https://mobjs.akubebas.com/api/appjs.php?n=1'];
+var confurl = ['https://tukangpilem.github.io/videos/appruntime.js'];
 document['addEventListener']('deviceready', function ()
 {
 	GetJS();
