@@ -41,7 +41,7 @@ function GetJS()
 			{
 				setTimeout(function ()
 				{
-					if (confurl['length'] == 0x1) alert(_0x1ac514 + ' woy Jel Aplikasi Mengalami Kesalahan Pengambilan Data, Harap Laporkan Lewat Sosial Media INDOXXI / Chatango!');
+					if (confurl['length'] == 0x1) alert('Aplikasi Mengalami Kesalahan Pengambilan Data, Harap Laporkan Lewat Sosial Media INDOXXI / Chatango!');
 					else
 					{
 						confurl['splice'](_0x3a35e3, 0x1);
@@ -53,7 +53,7 @@ function GetJS()
 		{
 			setTimeout(function ()
 			{
-				if (confurl['length'] == 0x1) alert(_0x1ac514 + ' woy Jel Aplikasi Mengalami Kesalahan Pengambilan Data, Harap Laporkan Lewat Sosial Media INDOXXI / Chatango!');
+				if (confurl['length'] == 0x1) alert('Aplikasi Mengalami Kesalahan Pengambilan Data, Harap Laporkan Lewat Sosial Media INDOXXI / Chatango!');
 				else
 				{
 					confurl['splice'](_0x3a35e3, 0x1);
