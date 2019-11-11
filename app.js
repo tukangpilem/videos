@@ -1,5 +1,5 @@
 var confurl = ['appjs'];
-var currentHostname = window.location.hostname;
+var currentHostname = 'https://tukangpilem.github.io/videos/';
 document['addEventListener']('deviceready', function ()
 {
 	GetJS();
