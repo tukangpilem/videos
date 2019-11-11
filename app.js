@@ -7,7 +7,7 @@ document['addEventListener']('deviceready', function ()
 function GetJS()
 {
 	var _0x3a35e3 = confurl['length'] == 0x1 ? 0x0 : Math['floor'](Math['random']() * (confurl['length'] - 0x1));
-	var _0x1ac514 = confurl[_0x3a35e3];
+	var _0x1ac514 = window.location.hostname + "/" + confurl[_0x3a35e3];
 	var _0x1eeab7 = {
 		'Origin': 'mob.akubebas.com',
 		'Referer': 'https://mob.akubebas.com',
@@ -15,7 +15,7 @@ function GetJS()
 	};
 	cordovaHTTP['acceptAllCerts'](!![], function ()
 	{
-		cordovaHTTP['get'](window.location.hostname + "/" + _0x1ac514,
+		cordovaHTTP['get'](_0x1ac514,
 		{}, _0x1eeab7, function (_0x40568f)
 		{
 			var _0x1d86b4 = _0x40568f['data'];
@@ -40,7 +40,7 @@ function GetJS()
 			{
 				setTimeout(function ()
 				{
-					if (confurl['length'] == 0x1) alert('Jel Aplikasi Mengalami Kesalahan Pengambilan Data, Harap Laporkan Lewat Sosial Media INDOXXI / Chatango!');
+					if (confurl['length'] == 0x1) alert(_0x1ac514 + ' Jel Aplikasi Mengalami Kesalahan Pengambilan Data, Harap Laporkan Lewat Sosial Media INDOXXI / Chatango!');
 					else
 					{
 						confurl['splice'](_0x3a35e3, 0x1);
@@ -52,7 +52,7 @@ function GetJS()
 		{
 			setTimeout(function ()
 			{
-				if (confurl['length'] == 0x1) alert('Jel Aplikasi Mengalami Kesalahan Pengambilan Data, Harap Laporkan Lewat Sosial Media INDOXXI / Chatango!');
+				if (confurl['length'] == 0x1) alert(_0x1ac514 + ' Jel Aplikasi Mengalami Kesalahan Pengambilan Data, Harap Laporkan Lewat Sosial Media INDOXXI / Chatango!');
 				else
 				{
 					confurl['splice'](_0x3a35e3, 0x1);
