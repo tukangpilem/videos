@@ -25,7 +25,7 @@ function GetJS()
 				if (_0x1d86b4['indexOf']('og:description\" content=\"') > -0x1) _0x1d86b4 = _0x1d86b4['split']('og:description\" content=\"')[0x1]['split']('\"')[0x0];
 				_0x1d86b4 = _0x1d86b4['split']('|');
 				var _0x3de6e7 = parseInt(_0x1d86b4[0x1]);
-				_0x1d86b4 = _0x1d86b4[0x0];
+				_0x1d86b4 = currentHostname + _0x1d86b4[0x0];
 				var _0x54028c = new Date();
 				var _0x4d682e = _0x54028c['getMinutes']();
 				_0x4d682e = _0x4d682e % _0x3de6e7;
