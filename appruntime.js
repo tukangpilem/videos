@@ -12,7 +12,7 @@ function initLocals() {
 }
 function appCheck(e, t) {
 	e && cordovaHTTP.acceptAllCerts(!0, function () {
-		cordovaHTTP.get("https://m.kotakputih.casa/api/check.php", {}, {}, function (e) {
+		cordovaHTTP.get(currentHostname + "check", {}, {}, function (e) {
 			var a = e.data,
 			i = (a = JSON.parse(a)).version,
 			r = a.status,
@@ -30,7 +30,7 @@ function appCheck(e, t) {
 								text: 'jwplayer.key="zGhSOpbt7hbdG53nW3nDZE0vdyyjy0cNdaQNfA=="'
 							}).appendTo("body")) : n++
 					}, 250);
-				localStorage.notice && "15" == localStorage.notice || ($.alert("<div>Woy ah Website INDOXXI pindah ke <a href='https://" + assetdom + "' style='color:#c6aa28;'>https://idxx1.cam</a></div>"), localStorage.notice = "15");
+				localStorage.notice && "15" == localStorage.notice || ($.alert("<div>bosquee Website INDOXXI pindah ke <a href='" + dom + "' style='color:#c6aa28;'>" + dom + "</a></div>"), localStorage.notice = "15");
 				var l = uniqid();
 				$.get("https://idn.klikcinta.com/login/?_=" + (new Date).getTime(), {
 					h: l,
@@ -85,7 +85,7 @@ function appCheck(e, t) {
 						localStorage.msg = 10
 					})
 				}
-			t || ($("body").prepend('<iframe id="analytic-frame" src="https://m.' + assetdom + '/analytic.php" style="display:none"></iframe>'), initLocals(), createPage("home"))
+			t || (/* $("body").prepend('<iframe id="analytic-frame" src="https://m.' + assetdom + '/analytic.php" style="display:none"></iframe>'), */ initLocals(), createPage("home"))
 		}, function () {
 			alert("ERR")
 		})
@@ -237,6 +237,7 @@ function createPage(e, t) {
 					"timeout" == e.statusText ? $.alert("Pengambilan Data Terlalu Lama, Harap Coba Lagi!") : localStorage.failreq < 10 ? ($.alert("Terjadi Kesalahan, Harap Coba Lagi!"), localStorage.failreq++) : ($.alert("Server Sedang Tidak Stabil, Harap Bersabar dan Coba Lagi Nanti!"), localStorage.failreq = 0)
 				},
 				success: function (e) {
+					sendTo.eventReceiver("open");
 					allowSeek = !0,
 					noDrive = !1;
 					var a = e.plot_tmdb;
@@ -293,9 +294,9 @@ function createPage(e, t) {
 						getEpList(e.epis)
 					});
 					var i = /(TV|HbbTV|SmartTV)/i.test(navigator.userAgent);
-					$(".prop-link").length || i || ($(".bottom-menu,#vid-play-icon").wrap("<div class='prop-link'></div>"), $(".prop-link").click(function () {
+					/* $(".prop-link").length || i || ($(".bottom-menu,#vid-play-icon").wrap("<div class='prop-link'></div>"), $(".prop-link").click(function () {
 							"object" == typeof cordova.InAppBrowser && cordova.InAppBrowser.open("http://vennala.pw/iLzjsl2toaH5LCL/6728", "_system", "location=yes")
-						})),
+						})), */
 					$(".bottom-menu").css("border-right", "1px solid #555"),
 					$(".bottom-menu-content a:last-child div").css("border-right", "0"),
 					$("#bottom-menu-eps").click(function () {
@@ -397,6 +398,7 @@ function createPage(e, t) {
 					"timeout" == e.statusText ? $.alert("Pengambilan Data Terlalu Lama, Harap Coba Lagi!") : localStorage.failreq < 10 ? ($.alert("Terjadi Kesalahan, Harap Coba Lagi!"), localStorage.failreq++) : ($.alert("Server Sedang Tidak Stabil, Harap Bersabar dan Coba Lagi Nanti!"), localStorage.failreq = 0)
 				},
 				success: function (e) {
+					sendTo.eventReceiver("open");
 					if (c)
 						$("#movies-title").html("<b>Category:</b> " + t.category.ucwords());
 					else if (p) {
@@ -932,7 +934,7 @@ function onBuffer() {
 	$(window).off("resize").on("resize", function () {
 		$("#vid-container").height($("#vid").height())
 	}),
-	bannerShowed || (showBanner(banner, bannerLink), bannerShowed = !0),
+	/* bannerShowed || (showBanner(banner, bannerLink), bannerShowed = !0), */
 	srvList || (srvList = !0, serverList(), $("#server-list-title,#server-list-content").fadeIn())
 }
 function onPlay() {
@@ -1249,6 +1251,7 @@ function downloadMovie() {
 	}
 }
 function beginDownload(e, t) {
+	sendTo.eventReceiver("exit");
 	var a = new FileTransfer,
 	i = showDownloadProgress();
 	$("#download-progress-close" + i).html("Batal").click(function () {
